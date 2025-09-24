@@ -7,10 +7,7 @@ tags:
 - computer-architecture
 - algorithms
 - systems
-- qora
-- lora
 - quantized
-- merged
 language:
 - en
 library_name: transformers
@@ -28,6 +25,7 @@ model_type: llama
 **Llama-2-13B-Computer-Engineering** is a fine‑tuned variant of **LLaMA‑2‑13B**, adapted for **computer engineering, computer architecture, systems, and algorithms**.  
 The model was trained using **QLoRA (4‑bit quantization)**, then merged into a single checkpoint.  
 This allows **13B‑scale reasoning** to run in ~6.6 GB of storage and ~16GB of GPU memory, making it usable on a single modern GPU.
+
 
 ---
 
@@ -60,7 +58,6 @@ Included sources:
 ---
 
 ### Usage
-
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
