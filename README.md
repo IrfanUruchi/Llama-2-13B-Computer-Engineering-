@@ -18,6 +18,12 @@ datasets:
 model_type: llama
 ---
 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github)](https://github.com/IrfanUruchi/Llama-2-13B-Computer-Engineering-)
+[![Model Weights](https://img.shields.io/badge/🤗-Model_Weights-FFD21F?style=for-the-badge)](https://huggingface.co/Irfanuruchi/Llama-2-13B-Computer-Engineering)
+[![Meta AI Llama 2 Licence](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](https://huggingface.co/meta-llama/Llama-2-13b-hf)
+
+---
+
 # Llama-2-13B-Computer-Engineering
 
 ### Overview
