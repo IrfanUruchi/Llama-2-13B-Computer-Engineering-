@@ -32,7 +32,6 @@ model_type: llama
 The model was trained using **QLoRA (4‑bit quantization)**, then merged into a single checkpoint.  
 This allows **13B‑scale reasoning** to run in ~6.6 GB of storage and ~16GB of GPU memory, making it usable on a single modern GPU.
 
-
 ---
 
 ### Training Setup
@@ -41,6 +40,7 @@ This allows **13B‑scale reasoning** to run in ~6.6 GB of storage and ~16GB of 
 - **Optimized Layers:** Attention projection modules (`q_proj`, `k_proj`, `v_proj`, `o_proj`)  
 - **Final merge:** LoRA weights merged into the base model → single merged checkpoint  
 - **Resulting size:** ~6.6 GB (`safetensors` sharded files) vs. ~24 GB fp16 
+(Model Safetensor files are avaiable on the Model weights here just the tokenizers and configs files are avaiable)
 
 ---
 
@@ -64,6 +64,7 @@ Included sources:
 ---
 
 ### Usage
+
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
