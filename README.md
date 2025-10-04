@@ -68,10 +68,8 @@ Included sources:
 
 ```python
 
-model = AutoModelForCausalLM.from_pretrained(
-    "Irfanuruchi/Llama-2-13B-Computer-Engineering",
-    torch_dtype="auto",
-    device_map="auto"
+model = "Irfanuruchi/Llama-2-13B-Computer-Engineering"
+
 )
 
 ```
