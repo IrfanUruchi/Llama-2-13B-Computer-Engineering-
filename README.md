@@ -67,23 +67,12 @@ Included sources:
 
 
 ```python
-from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model = AutoModelForCausalLM.from_pretrained(
     "Irfanuruchi/Llama-2-13B-Computer-Engineering",
     torch_dtype="auto",
     device_map="auto"
 )
-tokenizer = AutoTokenizer.from_pretrained("Irfanuruchi/Llama-2-13B-Computer-Engineering")
-
-prompt = """### Instruction:
-Explain CPU pipelining and its advantages.
-
-### Response:"""
-
-inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-outputs = model.generate(**inputs, max_new_tokens=256)
-print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ```
 
