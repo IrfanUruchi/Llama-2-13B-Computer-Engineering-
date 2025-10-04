@@ -68,7 +68,7 @@ Included sources:
 
 ```python
 
-model = "Irfanuruchi/Llama-2-13B-Computer-Engineering"
+model_id = "Irfanuruchi/Llama-2-13B-Computer-Engineering"
 
 )
 
